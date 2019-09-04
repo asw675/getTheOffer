@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val problem = Problem()
-        problem.title = "第一题"
+        val problem = Problem("第一题")
+        problem.type = 0
         problems.add(problem)
 
         val recyclerView = findViewById<RecyclerView>(R.id.main_rv)
